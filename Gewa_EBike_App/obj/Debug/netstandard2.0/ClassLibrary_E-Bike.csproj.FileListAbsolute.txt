@@ -1,9 +1,0 @@
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\bin\Debug\netstandard2.0\ClassLibrary_E-Bike.deps.json
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\bin\Debug\netstandard2.0\ClassLibrary_E-Bike.dll
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\bin\Debug\netstandard2.0\ClassLibrary_E-Bike.pdb
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\obj\Debug\netstandard2.0\ClassLibrary_E-Bike.csprojAssemblyReference.cache
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\obj\Debug\netstandard2.0\ClassLibrary_E-Bike.AssemblyInfoInputs.cache
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\obj\Debug\netstandard2.0\ClassLibrary_E-Bike.AssemblyInfo.cs
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\obj\Debug\netstandard2.0\ClassLibrary_E-Bike.csproj.CoreCompileInputs.cache
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\obj\Debug\netstandard2.0\ClassLibrary_E-Bike.dll
-C:\Users\LukasSchumacher\source\repos\ClassLibrary_E-Bike\obj\Debug\netstandard2.0\ClassLibrary_E-Bike.pdb
