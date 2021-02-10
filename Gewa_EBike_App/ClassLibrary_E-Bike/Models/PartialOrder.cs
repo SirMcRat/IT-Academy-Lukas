@@ -1,6 +1,6 @@
 ﻿namespace ClassLibraryEBike
 {
-    public partial class PartialOrder : Entity
+    public class PartialOrder : Entity
     {      
         public InOut IncomingOutgoing { get; set; }
         public Product Product { get; set; }
