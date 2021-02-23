@@ -1,14 +1,17 @@
-﻿namespace ClassLibraryEBike
+﻿using System;
+
+namespace ClassLibraryEBike
 {
     public class Product : Entity
     {
         public string Name { get; set; }
         public string SerialNumber { get; set; }
        
-        public Product(int id, string name, string serialNumber) : base(id)
+        public Product(string name, string serialNumber) : base()
         {
             Name = name;
             SerialNumber = serialNumber;
         }
+
     }
 }

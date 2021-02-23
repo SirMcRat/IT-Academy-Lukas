@@ -1,4 +1,6 @@
-﻿namespace ClassLibraryEBike
+﻿using System;
+
+namespace ClassLibraryEBike
 {
     public class SinglePart : Product
     {
@@ -6,11 +8,21 @@
         public Company Supplier { get; set; }
         public int StorageAmount { get; set; }
 
-        public SinglePart(int id, string name, string serialNumber, SinglePartType type, Company supplier, int storageAmount) : base(id, name, serialNumber)
+        public SinglePart(string name, string serialNumber, SinglePartType type, Company supplier, int storageAmount) : base(name, serialNumber)
         {
             Type = type;
             Supplier = supplier;
             StorageAmount = storageAmount;            
+        }
+
+        public void AddStorage(int amount)
+        {
+            StorageAmount += amount;
+        }
+
+        public void SubstractStorage(int amount)
+        {
+            StorageAmount -= amount;
         }
     }
 }

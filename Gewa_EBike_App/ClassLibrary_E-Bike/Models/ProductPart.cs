@@ -5,7 +5,7 @@
         public SinglePart Part { get; set; }
         public int Amount { get; set; }
 
-        public ProductPart(int id, SinglePart part, int amount) : base(id)
+        public ProductPart(SinglePart part, int amount) : base()
         {
             Part = part;
             Amount = amount;

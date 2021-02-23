@@ -7,7 +7,7 @@
         public string Zip { get; set; }
         public string City { get; set; } 
         
-        public Company(int id, string name, string address, string zip, string city) : base(id)
+        public Company(string name, string address, string zip, string city) : base()
         {
             Name = name;
             Address = address;

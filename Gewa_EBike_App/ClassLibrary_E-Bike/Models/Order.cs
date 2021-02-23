@@ -1,12 +1,14 @@
-﻿namespace ClassLibraryEBike
-{
-    public class Order : Entity
-    {
-        public PartialOrder[] PartialOrders { get; set; }
+﻿using System.Collections.Generic;
 
-        public Order(int id, PartialOrder[] partialOrders) : base(id)
-        { 
-            PartialOrders = partialOrders;
-        }
+namespace ClassLibraryEBike
+{
+    public abstract class Order : Entity
+    {
+        public List<PartialOrder> PartialOrders = new List<PartialOrder>();
+
+        public Order() : base() { }        
+
+        public abstract void CreatePartialOrder(Product product, int amount);
+        public abstract void ClearPartialOrders();
     }
 }
