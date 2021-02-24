@@ -15,10 +15,17 @@ namespace ClassLibraryEBike
 
         public override void CreatePartialOrder(Product product, int amount)
         {
-            if (product is EndProduct)
+            if (product is EndProduct endProduct)
             {
-                var partialOrder = new PartialOrder(product, amount);
-                PartialOrders.Add(partialOrder);
+                if (endProduct.Customer == Customer)
+                {
+                    var partialOrder = new PartialOrder(product, amount);
+                    PartialOrders.Add(partialOrder);
+                }
+                else
+                {
+                    throw new Exception("wrong Customer");
+                }
             }
             else
             {

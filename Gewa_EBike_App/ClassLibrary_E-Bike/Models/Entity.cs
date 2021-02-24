@@ -5,12 +5,13 @@ namespace ClassLibraryEBike
     public class Entity
     {
         public int Id { get; }
-        private int currentId = 1;
+        private static int idCounter = 1;
+        
 
         public Entity()
         {
-            Id = currentId;
-            currentId++;
+            Id = idCounter;
+            idCounter++;
         }
 
     }

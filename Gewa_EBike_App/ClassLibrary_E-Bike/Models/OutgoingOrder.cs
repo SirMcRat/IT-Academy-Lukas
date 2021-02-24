@@ -16,11 +16,19 @@ namespace ClassLibraryEBike
 
         public override void CreatePartialOrder(Product product, int amount)
         {
-            if (product is SinglePart)
+            if (product is SinglePart part)
             {
-                var partialOrder = new PartialOrder(product, amount);
-                PartialOrders.Add(partialOrder);
+                if (part.Supplier == Supplier)
+                {
+                    var partialOrder = new PartialOrder(product, amount);
+                    PartialOrders.Add(partialOrder);
+                }
+                else
+                {
+                    throw new Exception("wrong Supplier");
+                }
             }
+
             else
             {
                 throw new Exception("SinglePart only");
